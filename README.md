@@ -64,6 +64,6 @@ To add the borders between the rows, delete the `bottom` class from lines 18 and
 
 ## Stretch
 
-1. Add another row in the `DataView` component to display the "Cost-To-Income ratio" for each borough.
+1. Add another row to the `DataView` component to display the "Cost-To-Income ratio" for each borough.
 
 2. You'll notice there is a message at the bottom of each graphic. For example, in the Staten Island graphic it says "Cost of living vastly differs for renters and buyers." Add this piece of styling and text to the DataView component.
