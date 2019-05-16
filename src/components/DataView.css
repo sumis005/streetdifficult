@@ -1,7 +1,7 @@
 .view{
   margin: 2% 15%;
   padding: 1rem;
-  background-image: linear-gradient(to right top, #2a669a, #3384b4, #42a2cd, #58c1e4, #73e1f9);
+  background: rgb(42,102,154);
   display: flex;
   align-items: center;
   text-transform: uppercase;
