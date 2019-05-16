@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import DataView from './components/DataView.js'
+import Navbar from './components/Navbar.js'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <h1 className="header">Earn More, Pay Less? Average Housing Costs and Incomes by NYC Borough</h1>
+
+      <DataView
+        borough="Brooklyn"
+        renterCost="$14,292"
+        ownerCost="$29,752"
+        renterIncome="$37,882"
+        ownerIncome="$94,177"/>
     </div>
   );
 }

@@ -1,68 +1,69 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Reusable Components with Props - Lab
 
-## Available Scripts
+![street easy](example.png)
 
-In the project directory, you can run:
+## The Goal
+StreetEasy is a site used to buy, sell, and rent apartments in New York City. StreetEasy also leverages both public and in house data to publish a blog about real estate trends in the city.
 
-### `npm start`
+The problem is, they could be creating their blog posts much more efficiently. Instead of designing individual graphics as they do now (see example above), they could be using reusable components in React to quickly create, update and display data on their site. In this lab we are going to refactor a page from their blog using React - they'll thank us for this later.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## The Setup
+Clone this repository. In the terminal, run the following commands:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```HTML
+npm install
+npm start
+```
 
-### `npm test`
+After it has installed, go to the link below to check out the blog post we will be refactoring:
+[Cost of Living in NYC](https://streeteasy.com/blog/cost-of-living-nyc-income-housing-all-5-boroughs/)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## The Lab
+1. We are going to be begin by making the Staten Island graphic from the StreetEasy blog post. Add a `DataView` component to under the `Navbar` component. Add the following attributes to the `DataView` component. This will pass down the provided information as props to the component.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```javascript
+<DataView
+  borough="Brooklyn"
+  renterCost="$14,292"
+  ownerCost="$29,752"/>
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+2. Add a `DataView` component for each of the boroughs (Queens, Brooklyn, Manhattan, Bronx). Fill in the attributes with the data provided in the StreetEasy blog post.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Open the `DataView` component. We are going to add another row so we can display the annual income in this component. To do so, add the code below to line 21.
 
-### `npm run eject`
+```javascript
+<div className="text bottom">
+  <h2 className="text-data">{props.renterIncome}</h2>
+  <h3 className="text-label">Annual Income</h3>
+</div>
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Then add the code under to line 34.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```javascript
+<div className="text bottom">
+  <h2 className="text-data">{props.ownerIncome}</h2>
+  <h3 className="text-label">Annual Housing Cost</h3>
+</div>
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To add the borders between the rows, delete the `bottom` class from lines 18 and 31. Then, pass the annual income data as props to the `DataView` component.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```javascript
+<DataView
+  borough="Brooklyn"
+  renterCost="$14,292"
+  ownerCost="$29,752"
+  renterIncome="$37,882"
+  ownerIncome="$94,177"/>
+```
 
-## Learn More
+4. Add the `renterIncome` attribute and `ownerIncome` attribute to each `DataView` component with the appropriate data.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Stretch
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Add another row in the `DataView` component to display the "Cost-To-Income ratio" for each borough.
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+2. You'll notice there is a message at the bottom of each graphic. For example, in the Staten Island graphic it says "Cost of living vastly differs for renters and buyers." Add this piece of styling and text to the DataView component.
