@@ -12,9 +12,7 @@ function App() {
       <DataView
         borough="Brooklyn"
         renterCost="$14,292"
-        ownerCost="$29,752"
-        renterIncome="$37,882"
-        ownerIncome="$94,177"/>
+        ownerCost="$29,752"/>
     </div>
   );
 }
