@@ -1,7 +1,7 @@
 import React from 'react';
 import './DataView.css'
 
-const DataView = (props) =>{
+const DataView = (props) => {
   return(
     <div className="view">
       <div className="view-column">
