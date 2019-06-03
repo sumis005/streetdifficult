@@ -18,7 +18,7 @@ The problem is, they could be creating their blog posts much more efficiently. I
     2. tap the `CS50 IDE` link in the header and choose `Web Server`
 6. If the app compiles with errors, to view the live app:
     1. tap the `CS50 IDE` link in the header
-    2. Choose `Web Server`
+    2. choose `Web Server`
 7. If the app fails to compile, re-clone the repository
 
 After it has installed, go to the link below to check out the blog post we will be refactoring:
