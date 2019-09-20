@@ -10,7 +10,7 @@ The problem is, they could be creating their blog posts much more efficiently. I
 ## The Setup
 
 1. Clone this repository using `git clone`
-2. `cd` into the `street-hard-reusable-components-props-lab` folder
+2. `cd` into the `street-difficult-reusable-components-props-lab` folder
 3. `npm install`
 4. `npm start`
 
