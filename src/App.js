@@ -12,10 +12,7 @@ const App = () => {
         <Navbar/>
         <h1 className="header">Earn More, Pay Less? Average Housing Costs and Incomes by NYC Borough</h1>
   
-        <DataView
-          borough="Brooklyn"
-          renterCost="$14,292"
-          ownerCost="$29,752"/>
+        <DataView/>
       </div>
     );
   }
