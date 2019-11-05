@@ -32,7 +32,7 @@ After it has installed, go to the link below to check out the blog post we will 
 
 3. Add an additional `<DataView/>` component to the `App.js` for each of the boroughs (Queens, Brooklyn, Manhattan, Bronx). Fill in the props with the data provided in the StreetEasy blog post.
 
-4. Open the `<DataView/>` component. We are going to add another row so we can display the annual income in this component. To do so, add the code below to line 21.
+4. Open the `<DataView/>` component. We are going to add another row so we can display the annual income in this component. To do so, add the code below beneath the renter cost (in the example, it is below line 18).
 
 ```javascript
 <div className="text bottom">
@@ -41,12 +41,12 @@ After it has installed, go to the link below to check out the blog post we will 
 </div>
 ```
 
-Then add the code under to line 34.
+Then add this code to the bottom of the right column (in the sample, it is after line 34). 
 
 ```javascript
 <div className="text bottom">
   <h2 className="text-data">{props.ownerIncome}</h2>
-  <h3 className="text-label">Annual Housing Cost</h3>
+  <h3 className="text-label">Annual Income</h3>
 </div>
 ```
 
