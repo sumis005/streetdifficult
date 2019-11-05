@@ -30,7 +30,7 @@ After it has installed, go to the link below to check out the blog post we will 
 
 2. Uh oh! You'll notice the ownerCost prop isn't being displayed! Update the `DataView.js` file to render the ownerCost prop.
 
-3. Add an additional `<DataView/>` component for each of the boroughs (Queens, Brooklyn, Manhattan, Bronx). Fill in the props with the data provided in the StreetEasy blog post.
+3. Add an additional `<DataView/>` component to the `App.js` for each of the boroughs (Queens, Brooklyn, Manhattan, Bronx). Fill in the props with the data provided in the StreetEasy blog post.
 
 4. Open the `<DataView/>` component. We are going to add another row so we can display the annual income in this component. To do so, add the code below to line 21.
 
