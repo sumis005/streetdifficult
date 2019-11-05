@@ -30,9 +30,9 @@ After it has installed, go to the link below to check out the blog post we will 
 
 2. Uh oh! You'll notice the ownerCost prop isn't being displayed! Update the `DataView.js` file to render the ownerCost prop.
 
-3. Add a `DataView` component for each of the boroughs (Queens, Brooklyn, Manhattan, Bronx). Fill in the attributes with the data provided in the StreetEasy blog post.
+3. Add an additional `<DataView/>` component for each of the boroughs (Queens, Brooklyn, Manhattan, Bronx). Fill in the props with the data provided in the StreetEasy blog post.
 
-4. Open the `DataView` component. We are going to add another row so we can display the annual income in this component. To do so, add the code below to line 21.
+4. Open the `<DataView/>` component. We are going to add another row so we can display the annual income in this component. To do so, add the code below to line 21.
 
 ```javascript
 <div className="text bottom">
@@ -50,7 +50,7 @@ Then add the code under to line 34.
 </div>
 ```
 
-To add the borders between the rows, delete the `bottom` class from lines 18 and 31. Then, pass the annual income data as props to the `DataView` component.
+To add the borders between the rows, delete the `bottom` class from lines 18 and 31. Then, pass the annual income data as props to the `<DataView/>` component.
 
 ```javascript
 <DataView
@@ -61,10 +61,10 @@ To add the borders between the rows, delete the `bottom` class from lines 18 and
   ownerIncome="$94,177"/>
 ```
 
-5. Add the `renterIncome` attribute and `ownerIncome` attribute to each `DataView` component with the appropriate data.
+5. Add the `renterIncome` prop and `ownerIncome` prop to each `<DataView/>` component with the appropriate data.
 
 ## Stretch
 
-1. Add another row to the `DataView` component to display the "Cost-To-Income ratio" for each borough.
+1. Add another row to the `<DataView/>` component to display the "Cost-To-Income ratio" for each borough.
 
 2. You'll notice there is a message at the bottom of each graphic. For example, in the Staten Island graphic it says "Cost of living vastly differs for renters and buyers." Add this piece of styling and text to the DataView component.
