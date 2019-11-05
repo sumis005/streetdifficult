@@ -23,7 +23,7 @@ After it has installed, go to the link below to check out the blog post we will 
 
 ```javascript
 <DataView
-  borough="Brooklyn"
+  borough="Staten Island"
   renterCost="$14,292"
   ownerCost="$29,752"/>
 ```
@@ -54,7 +54,7 @@ To add the borders between the rows, delete the `bottom` class from lines 18 and
 
 ```javascript
 <DataView
-  borough="Brooklyn"
+  borough="Staten Island"
   renterCost="$14,292"
   ownerCost="$29,752"
   renterIncome="$37,882"
