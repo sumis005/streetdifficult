@@ -50,7 +50,7 @@ Then add this code to the bottom of the right column (in the sample, it is after
 </div>
 ```
 
-To add the borders between the rows, delete the `bottom` class from lines 18 and 31. Then, pass the annual income data as props to the `<DataView/>` component.
+To add the borders between the rows, delete the `bottom` class from the two divs that are no longer the bottom of their respective columns (now their className will just be `"text"`. Then, pass the annual income data as props to the `<DataView/>` component.
 
 ```javascript
 <DataView
