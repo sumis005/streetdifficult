@@ -7,7 +7,7 @@ StreetEasy is a site used to buy, sell, and rent apartments in New York City. St
 
 The problem is, they could be creating their blog posts much more efficiently. Instead of designing individual graphics as they do now (see example above), they could be using reusable components in React to quickly create, update and display data on their site. In this lab we are going to refactor a page from their blog using React - they'll thank us for this later.
 
-## The Setup
+## Getting Started
 
 1. Clone this repository using `git clone`
 2. `cd` into the `street-difficult-reusable-components-props-lab` folder
@@ -63,7 +63,7 @@ To add the borders between the rows, delete the `bottom` class from the two divs
 
 5. Add the `renterIncome` prop and `ownerIncome` prop to each `<DataView/>` component with the appropriate data.
 
-## Stretch
+## Extensions
 
 1. Add another row to the `<DataView/>` component to display the "Cost-To-Income ratio" for each borough.
 
