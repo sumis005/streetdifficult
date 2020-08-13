@@ -1,7 +1,7 @@
 import React from 'react';
-import './DataView.css'
+import './DataView.css';
 
-const DataView = (props) => {
+function DataView(props) {
   return(
     <div className="view">
       <div className="view-column">
@@ -32,7 +32,7 @@ const DataView = (props) => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default DataView
+export default DataView;
