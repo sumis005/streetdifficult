@@ -19,7 +19,7 @@ After it has installed, go to the link below to check out the blog post we will 
 
 
 ## The Lab
-1. We are going to be begin by making the Staten Island graphic from the StreetEasy blog post. In the `App.js` component, find the `<DataView/>` component below the `<Navbar/>` component. Add the following attributes to the `<DataView/>` component. This will pass down the provided information as props to the component.
+1. We are going to be begin by making the Staten Island graphic from the StreetEasy blog post. In the `App.js` component, find the `<DataView/>` component below the `<h1>` element. Add the following attributes to the `<DataView/>` component. This will pass down the provided information as props to the component.
 
 ```javascript
 <DataView
